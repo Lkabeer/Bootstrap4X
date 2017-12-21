@@ -1,0 +1,58 @@
+$gray-dark:     #1A1B1D;
+
+body {
+    color: #fff;
+}
+
+#hero {
+    background: url('../assets/bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-img {
+    width: 80%;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3.5em;
+}
+
+.feature-wrapper {
+    color: $gray-dark;
+}
+
+.navbar {
+    width: 100%;
+    background: none !important;
+
+    @media(max-width: 576px) {
+        background: black !important;
+    }
+
+    .navbar-toggler {
+        cursor: pointer;
+        outline: 0;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .nav-item {
+        padding: 0 1rem;
+
+        @media(max-width: 576px) {
+            padding: 0;
+        }
+
+        .nav-link {
+            @media(max-width: 576px) {
+                font-weight: normal;
+                color: #fff !important;
+            }
+        }
+    }
+}
